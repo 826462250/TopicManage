@@ -17,3 +17,8 @@ a:hover{filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
 .drop-down.center > ul li{text-align: center;}
 .drop-down > ul li:last-child{border-bottom: none;}
 .drop-down-cover{position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 118;cursor: default;}
+
+a.button{float: left;padding: 0 20px;height: 30px;line-height: 30px;border: 1px solid #ccc;border-radius: 4px;margin: 0 10px;}
+a.button:first-child{margin-left: 0;}
+a.button:last-child{margin-right: 0;}
+a.button.blue{background-color: #3399fe;color: #fff;border: 1px solid #3399fe;}
