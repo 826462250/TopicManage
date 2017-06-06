@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*公用样式*/
+a{color: #2d374b;text-decoration: none;}
+a:hover{filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
+
+.drop-down{height: 30px;position: relative;cursor: pointer;box-sizing: border-box;}
+.drop-down.border{border: 1px solid #ccc;border-radius: 4px;}
+.drop-down > i{width: 30px;height: 30px;position: absolute;right: 0;top: 50%;margin-top: -15px;background: url(../img/icon_arrow.png) no-repeat center;}
+.drop-down > i.active{transform: rotate(180deg);-o-transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);}
+.drop-down > span{display: block;margin-right: 30px;text-align: center;height: 30px;line-height: 30px;padding: 0 10px;}
+.drop-down:hover > i{filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
+.drop-down:hover > span{filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
+.drop-down > ul{box-sizing: border-box;width: 100%;position: absolute;top: 30px;border: 1px solid #ccc;border-radius: 4px;padding: 5px;background-color: #fff;display: none;z-index: 119;}
+.drop-down > ul li{cursor: pointer;height: 30px;line-height: 30px;border-bottom: 1px solid #ccc;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.drop-down > ul li a{display: block;padding: 0 10px;}
+.drop-down.center > ul li{text-align: center;}
+.drop-down > ul li:last-child{border-bottom: none;}
+.drop-down-cover{position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 118;cursor: default;}
